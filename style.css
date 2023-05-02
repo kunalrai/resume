@@ -76,6 +76,7 @@ footer {
 
 .header-text {
   margin-left: 20px;
+  text-align: left;
 }
 .last-updated {
   position: absolute;
