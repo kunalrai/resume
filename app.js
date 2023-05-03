@@ -40,7 +40,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     };
 
     // Replace 'YOUR_AZURE_FUNCTION_URL' with the URL of your Azure Function
-    fetch('https://mywhatsappfxapp.azurewebsites.net/api/MyHttpTrigger?clientId=default', {
+    fetch('https://mywhatsappfxapp.azurewebsites.net/api/MyHttpTrigger', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
