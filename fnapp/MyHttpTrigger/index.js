@@ -20,11 +20,13 @@ module.exports = async function (context, req) {
     const accountSid = process.env.TWILIO_ACCOUNT_SID;
     const authToken = process.env.TWILIO_AUTH_TOKEN;
     const client = new twilio(accountSid, authToken);
-
+    console.log(req.body);
     const message = await client.messages.create({
-        body: req.body.message,
+        
+        body: req.body,
         from: 'whatsapp:+14155238886', // Twilio WhatsApp sandbox number
-        to: 'whatsapp:' +919911566229 // Replace with the user's WhatsApp number
+        to: 'whatsapp:+919911566229'
+        // Replace with the user's WhatsApp number
     });
 
     context.res = {
