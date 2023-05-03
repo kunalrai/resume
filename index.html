@@ -10,6 +10,9 @@
    
 </head>
 <body>
+    
+       
+     
     <header>
         <div class="header-content">
             <img src="profile.png" alt="Profile image" class="profile-image">
@@ -148,7 +151,22 @@
             <li>X, 1997, Rajasthan Board - 74%</li>
         </ul>
     </section>
-
+<section>
+    <h2>Contact Me</h2>
+    <!-- Remove the action and method attributes from the form -->
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
     <footer>
         <p>&copy; 2023 Kunal Rai. All Rights Reserved.</p>
     </footer>
